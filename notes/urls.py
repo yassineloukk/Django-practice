@@ -20,6 +20,6 @@ from . import views
 app_name = 'notes'
 
 urlpatterns = [
-    path('notes/', views.list, name='notes_list'),
-    path('notes/<int:note_id>/', views.detail, name='notes_detail'),
+    path('notes/', views.NotesListView.as_view(), name='notes_list'),
+    path('notes/<int:pk>/', views.NotesDetailsView.as_view(), name='notes_detail'),
 ]
