@@ -1,0 +1,14 @@
+.note-li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.note-li a {
+    text-decoration: none;
+    color: black;
+}
